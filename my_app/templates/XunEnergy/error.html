@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - XunEnergy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            animation: slide-in 1s ease-out;
+        }
+
+        h1 {
+            font-size: 6rem;
+            font-weight: 700;
+            color: #ff9900;
+            opacity: 0;
+            animation: fade-in 1.5s ease-in forwards;
+            
+        }
+
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            opacity: 0;
+            animation: fade-in 2s ease-in forwards;
+            color:whitesmoke;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .status {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            font-size: 0.875rem;
+            color: #8b949e;
+        }
+
+        .status a {
+            color: inherit;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            width: 120px;
+            margin: 20px auto;
+            opacity: 0;
+            animation: fade-in 2.5s ease-in forwards;
+        }
+
+        .loading i {
+            font-size: 40px;
+            color: #007bff;
+            animation: spin 2s linear infinite;
+        }
+
+        /* Animations */
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slide-in {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./imgaes/xun.jpg" alt="XunEnergy Logo"  class="logo">
+        <h1>404</h1>
+        <p>Oops! The page you're looking for isn't here.</p>
+        <p>If you think this is a mistake, please visit our <a href="Energy.html">homepage</a> or contact support.</p>
+        <div class="loading">
+            <i class="fa-solid fa-bolt spin"></i>
+        </div>
+    </div>
+    <div class="status">
+        <a href="#">
+            XUN_ENERGY Status
+            <span>@XUN_ENERGY</span>
+        </a>
+    </div>
+</body>
+</html>

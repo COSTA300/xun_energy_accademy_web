@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 -WRONG PAGE </title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .error-code {
+            font-size: 4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #58a6ff;
+            animation: bounce 1.2s ease-in-out infinite;
+        }
+
+        .message {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #79b8ff;
+            text-decoration: underline;
+        }
+
+        .status {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            font-size: 0.875rem;
+            color: #8b949e;
+        }
+
+        .status a {
+            color: inherit;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .documentation-link {
+            border: 1px solid #30363d;
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            display: inline-block;
+            margin-top: 1rem;
+            transition: all 0.2s ease;
+        }
+
+        .documentation-link:hover {
+            background-color: #161b22;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-code">404</div>
+        <div class="message">
+            Oops! The page you're looking for doesn't exist.
+        </div>
+        <p>our page is under construction, please check back later.</p>
+        <a href="#" class="documentation-link">
+            Learn more about XUN_ENERGY
+        </a>
+    </div>
+
+    <div class="status">
+        <a href="#">
+            XUN_ENERGY Status
+            <span>@XUN_ENERGY</span>
+        </a>
+    </div>
+</body>
+</html>
